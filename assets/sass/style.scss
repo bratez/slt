@@ -1,0 +1,180 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: 'Inconsolata', monospace;
+  //font-family: 'Oxygen Mono', monospace;
+}
+
+h1 {
+  font-family: 'Oxygen Mono';
+  font-size: 40px;
+  padding-top: 93px;
+}
+
+p {
+  font-size: 26px;
+}
+
+a {
+  color: #000;
+  text-decoration: underline;
+}
+
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background: #fff;
+
+  &__container {
+    width: 1200px;
+    margin: 0 auto;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+
+    @media (max-width: 719px) {
+      display: block;
+      margin: 0 auto;
+    }
+
+    img {
+      max-height: 70px;
+      margin: 10px 0;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    font-size: 26px;
+    padding: 31px 0 0;
+
+    @media (max-width: 719px) {
+      display: none;
+    }
+
+    li {
+      margin: 0 20px;
+      cursor: pointer;
+    }
+  }
+}
+
+.home {
+  &__image {
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__aims {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+
+    @media (max-width: 719px) {
+      display: block;
+    }
+
+    div {
+      width: 320px;
+      padding: 0 40px;
+      text-align: center;
+      max-width: 100%;
+      box-sizing: border-box;
+
+      @media (max-width: 719px) {
+        margin: 0 auto 100px;
+      }
+    }
+
+    img {
+      max-width: 100px;
+      display: block;
+      margin: 0 auto 30px;
+    }
+
+    strong {
+      font-family: 'Oxygen Mono';
+      font-size: 40px;
+      display: block;
+      margin: 0 0 20px;
+    }
+
+    p {
+      font-size: 26px;
+    }
+  }
+
+  &__mission,
+  &__about {
+    text-align: center;
+    margin: 0 auto 100px;
+    width: 600px;
+    padding: 100px;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    @media (max-width: 719px) {
+      padding: 100px 20px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+  }
+  
+  &__contacts {
+    text-align: center;
+  }
+}
+
+footer {
+  padding: 200px 0 40px;
+  text-align: center;
+}

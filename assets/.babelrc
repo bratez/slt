@@ -1,0 +1,23 @@
+{
+  "presets": [
+    ["@babel/env", {
+      "targets": {
+        "browsers": [
+          "Chrome >= 59",
+          "FireFox >= 44",
+          "Safari >= 7",
+          "Explorer 11",
+          "last 4 Edge versions"
+        ]
+      },
+      "useBuiltIns": true
+    }],
+    "@babel/react"
+  ],
+  "ignore": [
+    "node_modules"
+  ],
+  "plugins": [
+    "transform-es2015-arrow-functions"
+  ]
+}
