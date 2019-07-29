@@ -193,8 +193,149 @@ a {
 .home__contacts {
   text-align: center;
 }
+/* line 176, ../sass/style.scss */
+.home__scheme {
+  text-align: center;
+}
+/* line 179, ../sass/style.scss */
+.home__scheme h1 {
+  margin-bottom: 40px;
+}
+/* line 183, ../sass/style.scss */
+.home__scheme-header {
+  display: flex;
+  justify-content: center;
+}
+/* line 188, ../sass/style.scss */
+.home__scheme-content {
+  display: flex;
+  flex-direction: column;
+  background: #333;
+  color: #ccc;
+  padding: 60px 10px;
+}
+/* line 196, ../sass/style.scss */
+.home__scheme-row {
+  display: flex;
+  justify-content: center;
+}
+/* line 205, ../sass/style.scss */
+.home__scheme-column {
+  width: 300px;
+  margin: 0 10px;
+}
+/* line 210, ../sass/style.scss */
+.home__scheme-arrows {
+  height: 50px;
+  position: relative;
+}
+/* line 215, ../sass/style.scss */
+.home__scheme-arrows--type1:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: #fff;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+/* line 228, ../sass/style.scss */
+.home__scheme-arrows--type2 {
+  width: 640px;
+  margin: 0 auto;
+  border: 1px solid #fff;
+  border-width: 1px 1px 0;
+}
+/* line 234, ../sass/style.scss */
+.home__scheme-arrows--type2:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: #fff;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+/* line 247, ../sass/style.scss */
+.home__scheme-arrows--type3 {
+  width: 640px;
+  margin: 0 auto;
+  border: 1px solid #fff;
+  border-width: 0 1px;
+}
+/* line 253, ../sass/style.scss */
+.home__scheme-arrows--type3:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: #fff;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+/* line 266, ../sass/style.scss */
+.home__scheme-arrows--type4 {
+  width: 640px;
+  margin: 0 auto;
+  border: 1px solid #fff;
+  border-width: 0 0 0 1px;
+}
+/* line 272, ../sass/style.scss */
+.home__scheme-arrows--type4:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: #fff;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+/* line 285, ../sass/style.scss */
+.home__scheme-arrows--type5 {
+  width: 640px;
+  margin: 0 auto;
+  border: 1px solid #fff;
+  border-width: 0 0 0 1px;
+}
+/* line 293, ../sass/style.scss */
+.home__scheme-block {
+  border: 1px solid #ccc;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* line 301, ../sass/style.scss */
+.home__scheme-block-title {
+  text-transform: uppercase;
+  pointer-events: none;
+}
+/* line 306, ../sass/style.scss */
+.home__scheme-block-text {
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  overflow: hidden;
+  justify-content: center;
+  pointer-events: none;
+  transition: height 250ms ease-in;
+}
+/* line 315, ../sass/style.scss */
+.home__scheme-block-text.active {
+  height: 70px;
+  transition: height 250ms ease-in;
+}
 
-/* line 177, ../sass/style.scss */
+/* line 324, ../sass/style.scss */
 footer {
   padding: 200px 0 40px;
   text-align: center;

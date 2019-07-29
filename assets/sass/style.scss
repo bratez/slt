@@ -172,6 +172,153 @@ a {
   &__contacts {
     text-align: center;
   }
+
+  &__scheme {
+    text-align: center;
+
+    h1 {
+      margin-bottom: 40px;
+    }
+
+    &-header {
+      display: flex;
+      justify-content: center;
+    }
+    
+    &-content {
+      display: flex;
+      flex-direction: column;
+      background: #333;
+      color: #ccc;
+      padding: 60px 10px;
+    }
+
+    &-row {
+      display: flex;
+      justify-content: center;
+    }
+
+    &-arrows-row {
+
+    }
+
+    &-column {
+      width: 300px;
+      margin: 0 10px;
+    }
+
+    &-arrows {
+      height: 50px;
+      position: relative;
+
+      &--type1 {
+        &:after {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 1px;
+          height: 100%;
+          background: #fff;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+        }
+      }
+
+      &--type2 {
+        width: 640px;
+        margin: 0 auto;
+        border: 1px solid #fff;
+        border-width: 1px 1px 0;
+
+        &:after {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 1px;
+          height: 100%;
+          background: #fff;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+        }
+      }
+
+      &--type3 {
+        width: 640px;
+        margin: 0 auto;
+        border: 1px solid #fff;
+        border-width: 0 1px;
+
+        &:after {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 1px;
+          height: 100%;
+          background: #fff;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+        }
+      }
+
+      &--type4 {
+        width: 640px;
+        margin: 0 auto;
+        border: 1px solid #fff;
+        border-width: 0 0 0 1px;
+
+        &:after {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 1px;
+          height: 100%;
+          background: #fff;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+        }
+      }
+
+      &--type5 {
+        width: 640px;
+        margin: 0 auto;
+        border: 1px solid #fff;
+        border-width: 0 0 0 1px;
+      }
+    }
+
+    &-block {
+      border: 1px solid #ccc;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      &-title {
+        text-transform: uppercase;
+        pointer-events: none;
+      }
+
+      &-text {
+        display: flex;
+        flex-direction: column;
+        height: 0;
+        overflow: hidden;
+        justify-content: center;
+        pointer-events: none;
+        transition: height 250ms ease-in;
+
+        &.active {
+          height: 70px;
+          transition: height 250ms ease-in;
+        }
+      }
+    }
+  }
 }
 
 footer {
